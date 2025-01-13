@@ -24,6 +24,9 @@ public class SecurityConfig {
 
     @Bean
     public JwtDecoder jwtDecoder() {
-        return NimbusJwtDecoder.withJwkSetUri("https://login.microsoftonline.com/145f8758-681d-4413-9137-2973073f86e2/discovery/v2.0/keys").build();
+        //return NimbusJwtDecoder.withJwkSetUri("https://login.microsoftonline.com/145f8758-681d-4413-9137-2973073f86e2/discovery/v2.0/keys").build();
+        return NimbusJwtDecoder.withJwkSetUri("https://login.microsoftonline.com/da33d9d5-d2db-47f9-9d73-996ec0dd60d2/discovery/v2.0/keys").build();
     }
+
+    //https://login.microsoftonline.com/da33d9d5-d2db-47f9-9d73-996ec0dd60d2/v2.0
 }
